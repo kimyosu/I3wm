@@ -4,5 +4,7 @@
 
 
 #!/bin/bash
-cp -r .config/polybar ~/.config
-cp -r .config/nvim ~/.config
+echo "instale o rofi antes :)";
+echo "movendo tema do powermenu...";
+
+sudo cp .config/rofiPowerMenu/themes/* /usr/share/rofi/themes
