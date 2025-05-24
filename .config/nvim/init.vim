@@ -12,17 +12,13 @@ Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 Plug 'honza/vim-snippets'
 
 "tema
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'shaunsingh/nord.nvim'
 
 "splits
 Plug 'christoomey/vim-tmux-navigator'
 
 "ale
 Plug 'dense-analysis/ale'
-
-"airline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 
 "devicons
 Plug 'ryanoasis/vim-devicons'
@@ -68,10 +64,9 @@ filetype plugin on   " Load the plugin file for the file type, if any
 filetype indent on   " Load the indent file for the file type, if any
 
 " temas
-set termguicolors
-let g:tokyonight_style = "storm" " ou night, moon, day
-colorscheme tokyonight
-let g:airline_theme='deus'
+colorscheme nord
+let g:airline_theme = 'nord'
+
 
 " AirLine """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline#extensions#tabline#enabled = 1
