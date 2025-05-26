@@ -181,7 +181,7 @@ new_window pixel 1
 
 for_window [class="^.*"] border pixel 5
 gaps inner 15
-gaps outer 15
+gaps outer 5
 
 # class                 border     backgr.    text       indicator  child_border
 client.focused          #88c0d0    #4c566a    #eceff4    #81a1c1    #4c566a
