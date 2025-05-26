@@ -35,8 +35,8 @@ bindsym $mod+s exec idea
 # fechar janela selecionada
 bindsym $mod+q kill
 
-#abrir firefox
-bindsym $mod+a exec firefox
+#abrir navegador
+bindsym $mod+a exec thorium-browser
 
 #abrir neovim
 bindsym $mod+g exec kitty nvim
