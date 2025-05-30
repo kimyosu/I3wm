@@ -197,3 +197,6 @@ exec --no-startup-id nitrogen --restore
 # monte automaticamente pendrive
 exec --no-startup-id udiskie -t
 
+
+exec --no-startup-id conky
+
