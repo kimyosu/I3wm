@@ -48,7 +48,8 @@ bindsym Print exec flameshot gui
 bindsym $mod+e exec kitty ranger
 
 # abrir o rofi
-bindsym $mod+t exec --no-startup-id rofi -show run
+bindsym $mod+t exec --no-startup-id rofi -show drun
+
 
 # change focus
 bindsym $mod+h focus left
