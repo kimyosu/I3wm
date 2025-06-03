@@ -1,4 +1,3 @@
-
 set $mod Mod4
 
 font pango:monospace 8
@@ -30,7 +29,7 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec kitty
 
 # abrir a IDE
-bindsym $mod+s exec idea
+bindsym $mod+s exec intellij-idea-community-edition
 
 # fechar janela selecionada
 bindsym $mod+q kill
@@ -47,8 +46,14 @@ bindsym Print exec flameshot gui
 #abrir ranger
 bindsym $mod+e exec kitty ranger
 
+#abrir o bluetuith
+bindsym $mod+b exec kitty bluetuith
+
 # abrir o rofi
 bindsym $mod+t exec --no-startup-id rofi -show drun
+
+# abrir o nmtui
+bindsym $mod+w exec kitty nmtui
 
 
 # change focus
