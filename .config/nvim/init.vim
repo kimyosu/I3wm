@@ -5,7 +5,7 @@
 
 call plug#begin()
 
-" lsp lua
+"lua
 Plug 'LuaLS/lua-language-server'
 
 Plug 'jiangmiao/auto-pairs'

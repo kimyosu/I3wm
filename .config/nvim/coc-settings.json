@@ -1,0 +1,21 @@
+{
+  "Lua": {
+    "runtime": {
+      "version": "LuaJIT"
+    },
+    "diagnostics": {
+      "globals": ["love"]
+    },
+    "workspace": {
+      "library": [
+        "${workspaceFolder}/libraries",
+        "${workspaceFolder}/stubs"
+      ],
+      "checkThirdParty": false
+    },
+    "telemetry": {
+      "enable": false
+    }
+  }
+}
+
