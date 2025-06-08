@@ -5,12 +5,13 @@
 
 call plug#begin()
 
+" lsp lua
+Plug 'LuaLS/lua-language-server'
+
 Plug 'jiangmiao/auto-pairs'
 
 "coc
-Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
-Plug 'honza/vim-snippets'
-
+Plug 'neoclide/coc.nvim'
 "tema
 Plug 'shaunsingh/nord.nvim'
 
@@ -71,4 +72,16 @@ let g:airline_powerline_fonts = 1
 "nerdtre
 let NERDTreeWinPos = "right"
 nmap <C-a> :NERDTreeToggle<CR>
+
+" abrir aba de sugestões
+inoremap <C-j> <C-r>=coc#refresh()<CR>
+
+" aceitar sugestão
+inoremap <C-CR> <C-r>=coc#_select_confirm()<CR>
+
+" Usar Tab pra navegar pra próxima sugestão
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+
+" Usar Shift+Tab pra voltar sugestão anterior
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
