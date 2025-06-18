@@ -10,6 +10,8 @@ exec --no-startup-id nitrogen --restore
 
 exec --no-startup-id polybar
 
+exec --no-startup-id kitty
+
 exec --no-startup-id nm-applet
 
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -34,8 +36,11 @@ bindsym $mod+s exec intellij-idea-community-edition
 # fechar janela selecionada
 bindsym $mod+q kill
 
+#abrir lo-fi no navegador
+bindsym $mod+m exec vivaldi https://www.youtube.com/watch?v=d3PCwIJfcHs&t=273s
+
 #abrir navegador
-bindsym $mod+a exec thorium-browser
+bindsym $mod+a exec vivaldi
 
 #abrir neovim
 bindsym $mod+g exec kitty nvim
@@ -181,7 +186,6 @@ exec --no-startup-id setxkbmap br abnt2
 
 exec --no-startup-id picom --config ~/.config/picom/picom.conf
 
-new_window pixel 1
 
 
 for_window [class="^.*"] border pixel 5
@@ -203,6 +207,8 @@ exec --no-startup-id nitrogen --restore
 # monte automaticamente pendrive
 exec --no-startup-id udiskie -t
 
-
 exec --no-startup-id conky
+
+exec --no-startup-id ~/.config/i3/scripts/agua.sh
+
 
