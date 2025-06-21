@@ -189,7 +189,7 @@ exec --no-startup-id picom --config ~/.config/picom/picom.conf
 
 
 for_window [class="^.*"] border pixel 5
-gaps inner 15
+gaps inner 20
 gaps outer 5
 
 # class                 border     backgr.    text       indicator  child_border
