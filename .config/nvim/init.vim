@@ -8,10 +8,10 @@ call plug#begin()
 "lua
 Plug 'LuaLS/lua-language-server'
 
+Plug 'nvim-lspconfig'
+
 Plug 'jiangmiao/auto-pairs'
 
-"coc
-Plug 'neoclide/coc.nvim'
 "tema
 Plug 'shaunsingh/nord.nvim'
 
