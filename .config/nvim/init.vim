@@ -5,19 +5,10 @@
 
 call plug#begin()
 
-"lua
-Plug 'LuaLS/lua-language-server'
 
-Plug 'nvim-lspconfig'
-
-Plug 'jiangmiao/auto-pairs'
 
 "tema
 Plug 'shaunsingh/nord.nvim'
-
-"splits
-Plug 'christoomey/vim-tmux-navigator'
-
 
 "devicons
 Plug 'ryanoasis/vim-devicons'
@@ -73,15 +64,4 @@ let g:airline_powerline_fonts = 1
 let NERDTreeWinPos = "right"
 nmap <C-a> :NERDTreeToggle<CR>
 
-" abrir aba de sugestões
-inoremap <C-j> <C-r>=coc#refresh()<CR>
-
-" aceitar sugestão
-inoremap <C-CR> <C-r>=coc#_select_confirm()<CR>
-
-" Usar Tab pra navegar pra próxima sugestão
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-
-" Usar Shift+Tab pra voltar sugestão anterior
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
