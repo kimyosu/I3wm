@@ -9,8 +9,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nitrogen --restore
 
 exec --no-startup-id polybar
-
-exec --no-startup-id kitty
+exec --no-startup-id roxterm
 
 exec --no-startup-id nm-applet
 
@@ -28,7 +27,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # abrir a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec roxterm
 
 # abrir a IDE
 bindsym $mod+s exec intellij-idea-community-edition
@@ -43,22 +42,22 @@ bindsym $mod+m exec vivaldi https://www.youtube.com/watch?v=d3PCwIJfcHs&t=273s
 bindsym $mod+a exec vivaldi
 
 #abrir neovim
-bindsym $mod+g exec kitty nvim
+bindsym $mod+g exec roxterm -e nvim
 
 #tirar print lol
 bindsym Print exec flameshot gui
 
 #abrir ranger
-bindsym $mod+e exec kitty ranger
+bindsym $mod+e exec  roxterm -e ranger
 
 #abrir o bluetuith
-bindsym $mod+b exec kitty bluetuith
+bindsym $mod+b exec roxterm -e bluetuith
 
 # abrir o rofi
 bindsym $mod+t exec --no-startup-id rofi -show drun
 
 # abrir o nmtui
-bindsym $mod+w exec kitty nmtui
+bindsym $mod+w exec roxterm -e nmtui
 
 
 # change focus
@@ -181,13 +180,6 @@ bindsym $mod+r mode "resize"
 # starta desabilitando a aceleração do mouse
 exec --no-startup-id xinput set-prop 11 "libinput Accel Profile Enabled" 0, 1
 
-# starta com o layout do teclado br-abnt2
-exec --no-startup-id setxkbmap br abnt2
-
-exec --no-startup-id picom --config ~/.config/picom/picom.conf
-
-
-
 for_window [class="^.*"] border pixel 5
 gaps inner 20
 gaps outer 5
@@ -207,8 +199,10 @@ exec --no-startup-id nitrogen --restore
 # monte automaticamente pendrive
 exec --no-startup-id udiskie -t
 
-exec --no-startup-id conky
 
-exec --no-startup-id ~/.config/i3/scripts/agua.sh
 
+exec --no-startup-id xinput --set-prop "USB OPTICAL MOUSE " "libinput Accel Profile Enabled" 0 1
+
+
+exec --no-startup-id ~/.config/polybar/launch.sh
 
