@@ -96,7 +96,7 @@ case ${chosen} in
         ;;
     $lock)
 
-        betterlockscreen -l
+        i3lock
 
         ;;
     $suspend)
