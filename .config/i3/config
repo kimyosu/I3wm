@@ -27,7 +27,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # abrir a terminal
-bindsym $mod+Return exec roxterm
+bindsym $mod+Return exec kitty
 
 # abrir a IDE
 bindsym $mod+s exec intellij-idea-community-edition
@@ -39,25 +39,25 @@ bindsym $mod+q kill
 bindsym $mod+m exec vivaldi https://www.youtube.com/watch?v=d3PCwIJfcHs&t=273s
 
 #abrir navegador
-bindsym $mod+a exec vivaldi
+bindsym $mod+a exec firefo:
 
 #abrir neovim
-bindsym $mod+g exec roxterm -e nvim
+bindsym $mod+g exec kitty nvim
 
 #tirar print lol
 bindsym Print exec flameshot gui
 
 #abrir ranger
-bindsym $mod+e exec  roxterm -e ranger
+bindsym $mod+e exec  kitty ranger
 
 #abrir o bluetuith
-bindsym $mod+b exec roxterm -e bluetuith
+bindsym $mod+b exec kitty  bluetuith
 
 # abrir o rofi
 bindsym $mod+t exec --no-startup-id rofi -show drun
 
 # abrir o nmtui
-bindsym $mod+w exec roxterm -e nmtui
+bindsym $mod+w exec kitty  nmtui
 
 
 # change focus
