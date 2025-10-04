@@ -9,6 +9,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nitrogen --restore
 
 exec --no-startup-id polybar
+exec --no-startup-id picom
 exec --no-startup-id roxterm
 
 exec --no-startup-id nm-applet
@@ -58,6 +59,7 @@ bindsym $mod+t exec --no-startup-id rofi -show drun
 
 # abrir o nmtui
 bindsym $mod+w exec kitty  nmtui
+bindsym $mod+F12 exec ~/.config/polybar/scripts/powermenu.sh
 
 
 # change focus
