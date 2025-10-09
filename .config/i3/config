@@ -40,7 +40,7 @@ bindsym $mod+q kill
 bindsym $mod+m exec vivaldi https://www.youtube.com/watch?v=d3PCwIJfcHs&t=273s
 
 #abrir navegador
-bindsym $mod+a exec firefox:
+bindsym $mod+a exec firefox
 
 #abrir neovim
 bindsym $mod+g exec kitty nvim
