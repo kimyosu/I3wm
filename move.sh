@@ -5,6 +5,8 @@
 
 #!/bin/bash
 echo "instale o rofi antes :)";
+echo "Criando as pastas do Rofi themes..."
+sudo mkdir -p /usr/share/rofi/themes
 echo "movendo tema do powermenu...";
 sudo cp .config/rofiPowerMenu/themes/* /usr/share/rofi/themes
 
