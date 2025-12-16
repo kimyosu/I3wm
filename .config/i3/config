@@ -11,7 +11,8 @@ exec --no-startup-id polybar
 exec --no-startup-id picom
 exec --no-startup-id kitty
 
-exec --no-startup-id xrandr --output HDMI-1 --auto --right-of eDP-1 --output eDP-1 --auto
+# Configuração de Monitores (Notebook + HDMI na direita)
+exec_always --no-startup-id xrandr --output eDP-1 --auto --primary --output HDMI-1 --auto --right-of eDP-1
 
 exec --no-startup-id nm-applet
 
@@ -23,6 +24,10 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
+# Focar na saída (output) da esquerda ou direita
+bindsym $mod+Ctrl+h focus output left
+bindsym $mod+Ctrl+l focus output right
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
@@ -133,6 +138,12 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
+
+# Move a janela focada para o outro monitor
+bindsym $mod+x move container to output next
+
+# Move todas as janelas para o outro monitor
+bindsym $mod+Shift+x move workspace to output next
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
