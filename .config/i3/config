@@ -64,8 +64,8 @@ bindsym $mod+b exec kitty  bluetuith
 bindsym $mod+t exec --no-startup-id rofi -show drun
 
 # abrir o nmtui
-bindsym $mod+w exec kitty  nmtui
-bindsym $mod+F12 exec ~/.config/polybar/scripts/powermenu.sh
+bindsym $mod+w exec kitty nmtui
+bindsym $mod+u exec ~/.config/polybar/scripts/powermenu.sh
 
 
 # change focus
