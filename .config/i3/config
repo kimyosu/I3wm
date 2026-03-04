@@ -12,7 +12,7 @@ exec --no-startup-id picom
 exec --no-startup-id kitty
 
 # Configuração de Monitores (Notebook + HDMI na direita)
-exec_always --no-startup-id xrandr --output eDP-1 --auto --primary --output HDMI-1 --auto --right-of eDP-1
+exec_always --no-startup-id xrandr --output eDP1 --auto --primary --output HDMI1 --auto --right-of eDP1
 
 exec --no-startup-id nm-applet
 
@@ -37,13 +37,10 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec kitty
 
 # abrir a IDE
-bindsym $mod+s exec intellij-idea-community-edition
+bindsym $mod+s exec idea
 
 # fechar janela selecionada
 bindsym $mod+q kill
-
-#abrir lo-fi no navegador
-bindsym $mod+m exec vivaldi https://www.youtube.com/watch?v=d3PCwIJfcHs&t=273s
 
 #abrir navegador
 bindsym $mod+a exec firefox
@@ -191,9 +188,6 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
-# starta desabilitando a aceleração do mouse
-exec --no-startup-id xinput set-prop 11 "libinput Accel Profile Enabled" 0, 1
-
 for_window [class="^.*"] border pixel 5
 gaps inner 20
 gaps outer 5
@@ -206,17 +200,6 @@ client.urgent           #bf616a    #bf616a    #eceff4    #bf616a    #bf616a
 client.placeholder      #000000    #3b4252    #d8dee9    #000000    #3b4252
 
 client.background       #2e3440
-
-
-exec --no-startup-id nitrogen --restore
-
-# monte automaticamente pendrive
-exec --no-startup-id udiskie -t
-
-
-
-exec --no-startup-id xinput --set-prop "USB OPTICAL MOUSE " "libinput Accel Profile Enabled" 0 1
-
 
 exec --no-startup-id ~/.config/polybar/launch.sh
 
