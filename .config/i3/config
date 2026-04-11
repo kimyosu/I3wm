@@ -6,7 +6,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-exec --no-startup-id feh --bg-fill ~/Media/Imagens/Wallpaper/03.jpg
+exec --no-startup-id feh --bg-fill ~/Media/Imagens/Wallpaper/01.jpg
 exec --no-startup-id polybar
 exec --no-startup-id picom
 exec --no-startup-id kitty
@@ -201,5 +201,6 @@ client.placeholder      #000000    #3b4252    #d8dee9    #000000    #3b4252
 
 client.background       #2e3440
 
-exec --no-startup-id ~/.config/polybar/launch.sh
+#exec --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id flameshot
 
