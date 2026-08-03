@@ -11,9 +11,7 @@ exec --no-startup-id polybar
 exec --no-startup-id picom
 exec --no-startup-id kitty
 
-# Configuração de Monitores (Notebook + HDMI na direita)
-exec_always --no-startup-id xrandr --output eDP1 --auto --primary --output HDMI1 --auto --right-of eDP1
-
+exec_always --no-startup-id ~/.screenlayout/index.sh
 exec --no-startup-id nm-applet
 
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -36,16 +34,9 @@ tiling_drag modifier titlebar
 # abrir a terminal
 bindsym $mod+Return exec kitty
 
-# abrir a IDE
-bindsym $mod+s exec idea
-
 # fechar janela selecionada
 bindsym $mod+q kill
 
-#abrir navegador
-bindsym $mod+a exec firefox
-
-#abrir neovim
 bindsym $mod+g exec kitty nvim
 
 #tirar print lol
@@ -54,16 +45,8 @@ bindsym Print exec flameshot gui
 #abrir ranger
 bindsym $mod+e exec  kitty ranger
 
-#abrir o bluetuith
-bindsym $mod+b exec kitty  bluetuith
-
 # abrir o rofi
 bindsym $mod+t exec --no-startup-id rofi -show drun
-
-# abrir o nmtui
-bindsym $mod+w exec kitty nmtui
-bindsym $mod+u exec ~/.config/polybar/scripts/powermenu.sh
-
 
 # change focus
 bindsym $mod+h focus left
@@ -203,4 +186,3 @@ client.background       #2e3440
 
 #exec --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id flameshot
-
