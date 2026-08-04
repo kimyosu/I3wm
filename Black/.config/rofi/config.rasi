@@ -1,0 +1,155 @@
+@theme "/dev/null"
+
+configuration {
+    modi: "drun,filebrowser";
+    show-icons: true;
+
+    icon-theme: "Glyphs";
+
+    drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+
+    terminal: "kitty";
+
+    location: 0;
+
+    hide-scrollbar: true;
+
+    display-drun: "drun:";
+    display-window: " ";
+    display-filebrowser: "󰉋 ";
+
+    sidebar-mode: false;
+}
+
+
+* {
+    font: "JetBrainsMono Nerd Font 13";
+
+    bg:         #000000;
+    surface:    #151515;
+    line:       #404040;
+
+    fg:         #e6e6e6;
+
+    hl-fill:    #ffffff;
+    hl-fg:      #000000;
+    hl-fg-soft: #4a4a4a;
+
+    disabled:   #8f8f8f;
+
+    background-color: transparent;
+
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+
+window {
+    location: center;
+    anchor: center;
+
+    width: 38%;
+
+    background-color: @bg;
+
+    border: 2px solid;
+    border-color: @hl-fill;
+
+    border-radius: 0px;
+
+    padding: 14px;
+}
+
+
+mainbox {
+    children: [
+        inputbar,
+        listview
+    ];
+
+    spacing: 12px;
+}
+
+
+inputbar {
+    background-color: @bg;
+
+    border: 0px 0px 2px 0px;
+    border-color: @line;
+
+    children: [
+        prompt,
+        entry
+    ];
+
+    padding: 10px 12px;
+
+    spacing: 10px;
+}
+
+
+prompt {
+    text-color: @disabled;
+    vertical-align: 0.5;
+}
+
+
+entry {
+    padding: 3px;
+
+    text-color: @hl-fill;
+
+    placeholder: "...";
+    placeholder-color: @disabled;
+}
+
+
+listview {
+    lines: 6;
+
+    spacing: 3px;
+
+    scrollbar: false;
+
+    background-color: @bg;
+}
+
+
+element {
+    padding: 8px 10px;
+
+    text-color: @fg;
+
+    border: 1px solid;
+    border-color: transparent;
+
+    border-radius: 0px;
+
+    background-color: @bg;
+}
+
+
+element selected {
+    background-color: @hl-fill;
+
+    border-color: @hl-fill;
+
+    text-color: @hl-fg;
+}
+
+
+element-icon {
+    size: 24px;
+
+    margin: 0 10px 0 0;
+
+    vertical-align: 0.5;
+}
+
+
+element-text {
+    vertical-align: 0.5;
+
+    text-color: inherit;
+}

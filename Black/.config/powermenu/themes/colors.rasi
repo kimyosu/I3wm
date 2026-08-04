@@ -1,0 +1,11 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ *
+ * Colors
+ *
+ **/
+
+/* Black & White color scheme */
+@import "/usr/share/rofi/themes/black.rasi"

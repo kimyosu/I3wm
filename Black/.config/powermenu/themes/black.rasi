@@ -1,0 +1,15 @@
+/**
+ *
+ * Black & White palette
+ * Based on Aditya Shakya's rofi theme structure
+ *
+ **/
+
+* {
+    background:     #000000FF;
+    background-alt: #181818FF;
+    foreground:     #FFFFFFFF;
+    selected:       #FFFFFFFF;
+    active:         #999999FF;
+    urgent:         #8B0000FF;
+}
