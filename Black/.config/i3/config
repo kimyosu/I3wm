@@ -6,12 +6,10 @@ exec --no-startup-id dex --autostart --environment i3
 
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-exec --no-startup-id feh --bg-fill ~/Media/Imagens/Wallpaper/01.jpg
-exec --no-startup-id polybar
+exec --no-startup-id feh --bg-fill ~/Media/Imagens/Wallpapers/01.jpg
 exec --no-startup-id picom
 exec --no-startup-id kitty
 
-exec_always --no-startup-id ~/.screenlayout/index.sh
 exec --no-startup-id nm-applet
 
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -183,6 +181,6 @@ client.urgent           #8b0000    #8b0000    #ffffff    #b22222    #8b0000
 client.placeholder      #555555    #181818    #999999    #555555    #555555
 
 client.background       #000000
-exec --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id flameshot
 exec --no-startup-id variety --quiet
+exec_always --no-startup-id ~/.screenlayout/index.sh
